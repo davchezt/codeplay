@@ -1,0 +1,25 @@
+{
+  "name": "codeplay",
+  "version": "0.0.1",
+  "description": "An offline front-end development playground",
+  "productName": "CodePlay",
+  "main": "./app/",
+  "scripts": {
+    "start": "electron ./app/",
+    "build:win32": "electron-packager . CodePlay --app-bundle-id=codeplay --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=dist --version-string.ProductName=CodePlay --version-string.FileDescription=CodePlay",
+    "build:win64": "electron-packager . CodePlay --app-bundle-id=codeplay --overwrite --asar=true --platform=win32 --arch=x64 --prune=true --out=dist --version-string.ProductName=CodePlay --version-string.FileDescription=CodePlay"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davchezt/codeplay"
+  },
+  "devDependencies": {
+    "asar": "^0.14.6",
+    "electron": "^4.0.0",
+    "electron-packager": "^13.0.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "monaco-loader": "^0.14.0"
+  }
+}
