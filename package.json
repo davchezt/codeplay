@@ -6,8 +6,8 @@
   "main": "./app/",
   "scripts": {
     "start": "electron ./app/",
-    "build:win32": "electron-packager . CodePlay --app-bundle-id=codeplay --overwrite --asar=true --platform=win32 --arch=ia32 --prune=true --out=dist --version-string.ProductName=CodePlay --version-string.FileDescription=CodePlay",
-    "build:win64": "electron-packager . CodePlay --app-bundle-id=codeplay --overwrite --asar=true --platform=win32 --arch=x64 --prune=true --out=dist --version-string.ProductName=CodePlay --version-string.FileDescription=CodePlay"
+    "build:win32": "electron-packager . CodePlay --app-bundle-id=codeplay --overwrite --asar --platform=win32 --arch=ia32 --prune=true --out=dist --version-string.ProductName=CodePlay --version-string.FileDescription=CodePlay --icon=app.ico --appCopyright=\"copyright © 2019 Raiza Rhamdan\"",
+    "build:win64": "electron-packager . CodePlay --app-bundle-id=codeplay --overwrite --asar --platform=win32 --arch=x64 --prune=true --out=dist --version-string.ProductName=CodePlay --version-string.FileDescription=CodePlay --icon=app.ico --appCopyright=\"copyright © 2019 Raiza Rhamdan\""
   },
   "repository": {
     "type": "git",

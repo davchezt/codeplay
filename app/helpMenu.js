@@ -8,7 +8,7 @@ function helpMenu () {
   for (var i = 0; i < helpa.length; i++) {
     helpa[i].addEventListener('click', function (e) {
       e.preventDefault()
-      shell.openExternal(this.href)
+      // shell.openExternal(this.href)
     })
   }
 }
